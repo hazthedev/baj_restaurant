@@ -1,0 +1,26 @@
+[
+  {
+    "name": "SETHLUI",
+    "description": "Southeast Asia's biggest food blog",
+    "quote": "The viral cheese bak kut teh you need to try in Setapak",
+    "url": "https://sethlui.com/baj-restaurant-cheese-bak-kut-teh-setapak"
+  },
+  {
+    "name": "Bangsar Babe",
+    "description": "KL's most respected food blogger",
+    "quote": "Worth the climb up the wet market stairs — the cheese pull is unreal",
+    "url": "https://bangsarbabe.com/baj-restaurant-setapak"
+  },
+  {
+    "name": "FoodAdvisor",
+    "description": "Malaysia's trusted food guide",
+    "quote": "4.5/5 rating with over 1,200 reviews — a Setapak institution",
+    "url": "https://www.foodadvisor.my/baj-restaurant-setapak"
+  },
+  {
+    "name": "Trip.com",
+    "description": "Global travel platform",
+    "quote": "A hidden gem above the wet market — the creamy chicken cutlet spaghetti is a surprise hit",
+    "url": "https://www.trip.com/travel-guide/baj-restaurant-setapak"
+  }
+]

@@ -1,0 +1,167 @@
+{
+  "categories": [
+    "Bak Kut Teh",
+    "Spaghetti & Western",
+    "Rice Sets",
+    "Snacks",
+    "Drinks",
+    "Set Meals"
+  ],
+  "items": [
+    {
+      "name": "Cheese Bak Kut Teh",
+      "description": "Our viral invention — tender pork chunks, fresh okra, aromatic herbal broth, topped with melted cheese. The dish that put us on the map.",
+      "price": "RM 12.90",
+      "category": "Bak Kut Teh",
+      "image": "/images/dishes/cheese-bak-kut-teh.jpg",
+      "tags": ["signature", "hot"],
+      "signature": true,
+      "featured": true,
+      "featuredIn": "SETHLUI"
+    },
+    {
+      "name": "Soup Bak Kut Teh",
+      "description": "Classic herbal broth with pork ribs, garlic, and mushrooms. The traditional way.",
+      "price": "RM 10.90",
+      "category": "Bak Kut Teh",
+      "image": "/images/dishes/soup-bak-kut-teh.jpg",
+      "tags": ["hot"]
+    },
+    {
+      "name": "Dry Bak Kut Teh",
+      "description": "Braised pork in dark soy sauce with dried chilies and lady fingers. Intense and aromatic.",
+      "price": "RM 11.90",
+      "category": "Bak Kut Teh",
+      "image": "/images/dishes/dry-bak-kut-teh.jpg",
+      "tags": ["spicy"]
+    },
+    {
+      "name": "Creamy Chicken Cutlet Spaghetti",
+      "description": "Crispy chicken cutlet over spaghetti in rich cream sauce. A fan favourite for a reason.",
+      "price": "RM 9.90",
+      "category": "Spaghetti & Western",
+      "image": "/images/dishes/chicken-cutlet-spaghetti.jpg",
+      "tags": ["signature"]
+    },
+    {
+      "name": "Chicken Chop",
+      "description": "Grilled chicken chop with black pepper sauce, served with fries and coleslaw.",
+      "price": "RM 8.90",
+      "category": "Spaghetti & Western",
+      "image": "/images/dishes/chicken-chop.jpg",
+      "tags": []
+    },
+    {
+      "name": "Spaghetti Bolognese",
+      "description": "Classic beef bolognese sauce over al dente spaghetti.",
+      "price": "RM 8.50",
+      "category": "Spaghetti & Western",
+      "image": "/images/dishes/spaghetti-bolognese.jpg",
+      "tags": []
+    },
+    {
+      "name": "Fried Rice with Chicken",
+      "description": "Wok-hei fried rice with diced chicken, eggs, and spring onions.",
+      "price": "RM 7.90",
+      "category": "Rice Sets",
+      "image": "/images/dishes/fried-rice.jpg",
+      "tags": []
+    },
+    {
+      "name": "Curry Chicken Rice",
+      "description": "Tender chicken in fragrant curry sauce with steamed rice.",
+      "price": "RM 8.50",
+      "category": "Rice Sets",
+      "image": "/images/dishes/curry-chicken-rice.jpg",
+      "tags": ["spicy"]
+    },
+    {
+      "name": "Economy Rice (3 dishes)",
+      "description": "Pick any 3 dishes with rice. Starting from RM 3.90 — student favourite.",
+      "price": "From RM 3.90",
+      "category": "Rice Sets",
+      "image": "/images/dishes/economy-rice.jpg",
+      "tags": ["cheap"]
+    },
+    {
+      "name": "Spring Rolls (3 pcs)",
+      "description": "Crispy fried spring rolls with sweet chili sauce.",
+      "price": "RM 4.50",
+      "category": "Snacks",
+      "image": "/images/dishes/spring-rolls.jpg",
+      "tags": ["vegetarian"]
+    },
+    {
+      "name": "Fried Tofu",
+      "description": "Crispy fried tofu cubes with dipping sauce.",
+      "price": "RM 4.00",
+      "category": "Snacks",
+      "image": "/images/dishes/fried-tofu.jpg",
+      "tags": ["vegetarian"]
+    },
+    {
+      "name": "Chicken Wings (3 pcs)",
+      "description": "Crispy fried chicken wings, marinated in house spices.",
+      "price": "RM 6.00",
+      "category": "Snacks",
+      "image": "/images/dishes/chicken-wings.jpg",
+      "tags": []
+    },
+    {
+      "name": "Honey Milk Longan",
+      "description": "Our signature drink — fresh longan in honey milk. Refreshing and mildly sweet.",
+      "price": "RM 5.50",
+      "category": "Drinks",
+      "image": "/images/dishes/honey-milk-longan.jpg",
+      "tags": ["signature"]
+    },
+    {
+      "name": "Kopi O (Hot/Iced)",
+      "description": "Traditional Malaysian black coffee. Strong and aromatic.",
+      "price": "RM 2.50",
+      "category": "Drinks",
+      "image": "/images/dishes/kopi-o.jpg",
+      "tags": ["cheap"]
+    },
+    {
+      "name": "Teh Tarik",
+      "description": "Malaysian pulled tea with condensed milk. Creamy and comforting.",
+      "price": "RM 2.80",
+      "category": "Drinks",
+      "image": "/images/dishes/teh-tarik.jpg",
+      "tags": ["cheap"]
+    },
+    {
+      "name": "Lemon Water",
+      "description": "Fresh lemon in iced water. Simple and refreshing.",
+      "price": "RM 2.00",
+      "category": "Drinks",
+      "image": "/images/dishes/lemon-water.jpg",
+      "tags": ["cheap", "vegetarian"]
+    },
+    {
+      "name": "BKT Set Meal",
+      "description": "Bak kut teh + rice + youtiao + drink. Complete and satisfying.",
+      "price": "RM 14.90",
+      "category": "Set Meals",
+      "image": "/images/dishes/bkt-set.jpg",
+      "tags": []
+    },
+    {
+      "name": "Western Set Meal",
+      "description": "Chicken chop + spaghetti + drink. Best value for hungry students.",
+      "price": "RM 12.90",
+      "category": "Set Meals",
+      "image": "/images/dishes/western-set.jpg",
+      "tags": []
+    },
+    {
+      "name": "Student Special",
+      "description": "Economy rice + drink. Budget-friendly and filling.",
+      "price": "RM 5.90",
+      "category": "Set Meals",
+      "image": "/images/dishes/student-special.jpg",
+      "tags": ["cheap"]
+    }
+  ]
+}
