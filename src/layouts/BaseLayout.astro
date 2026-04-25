@@ -29,6 +29,31 @@ const { title, description = 'The original Cheese Bak Kut Teh — featured by SE
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      name: "B.A.J Restaurant",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "1-18 Pasar Jalan Genting Kelang, Prima Setapak 2",
+        addressLocality: "Kuala Lumpur",
+        postalCode: "53000",
+        addressCountry: "MY"
+      },
+      telephone: "+60-18-988-8766",
+      priceRange: "$",
+      servesCuisine: ["Chinese", "Malaysian", "Fusion"],
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "4.5",
+        reviewCount: "1200"
+      },
+      knownFor: "Cheese Bak Kut Teh",
+      openingHoursSpecification: [
+        { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], opens: "08:00", closes: "15:00" },
+        { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], opens: "17:30", closes: "22:00" }
+      ]
+    })} />
   </head>
   <body class="bg-bone-white text-ink-black font-body antialiased">
     <slot />
