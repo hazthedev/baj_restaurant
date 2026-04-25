@@ -13,7 +13,7 @@
       "description": "Our viral invention — tender pork chunks, fresh okra, aromatic herbal broth, topped with melted cheese. The dish that put us on the map.",
       "price": "RM 12.90",
       "category": "Bak Kut Teh",
-      "image": "/images/dishes/cheese-bak-kut-teh.jpg",
+      "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800&h=600&fit=crop",
       "tags": ["signature", "hot"],
       "signature": true,
       "featured": true,
@@ -24,7 +24,7 @@
       "description": "Classic herbal broth with pork ribs, garlic, and mushrooms. The traditional way.",
       "price": "RM 10.90",
       "category": "Bak Kut Teh",
-      "image": "/images/dishes/soup-bak-kut-teh.jpg",
+      "image": "https://images.unsplash.com/photo-1607301406259-dfb34844a70c?w=800&h=600&fit=crop",
       "tags": ["hot"]
     },
     {
@@ -32,7 +32,7 @@
       "description": "Braised pork in dark soy sauce with dried chilies and lady fingers. Intense and aromatic.",
       "price": "RM 11.90",
       "category": "Bak Kut Teh",
-      "image": "/images/dishes/dry-bak-kut-teh.jpg",
+      "image": "https://images.unsplash.com/photo-1541544744-375cfed75400?w=800&h=600&fit=crop",
       "tags": ["spicy"]
     },
     {
@@ -40,7 +40,7 @@
       "description": "Crispy chicken cutlet over spaghetti in rich cream sauce. A fan favourite for a reason.",
       "price": "RM 9.90",
       "category": "Spaghetti & Western",
-      "image": "/images/dishes/chicken-cutlet-spaghetti.jpg",
+      "image": "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?w=800&h=600&fit=crop",
       "tags": ["signature"]
     },
     {
@@ -48,7 +48,7 @@
       "description": "Grilled chicken chop with black pepper sauce, served with fries and coleslaw.",
       "price": "RM 8.90",
       "category": "Spaghetti & Western",
-      "image": "/images/dishes/chicken-chop.jpg",
+      "image": "https://images.unsplash.com/photo-1432139555190-58524dae6a55?w=800&h=600&fit=crop",
       "tags": []
     },
     {
@@ -56,7 +56,7 @@
       "description": "Classic beef bolognese sauce over al dente spaghetti.",
       "price": "RM 8.50",
       "category": "Spaghetti & Western",
-      "image": "/images/dishes/spaghetti-bolognese.jpg",
+      "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=800&h=600&fit=crop",
       "tags": []
     },
     {
@@ -64,7 +64,7 @@
       "description": "Wok-hei fried rice with diced chicken, eggs, and spring onions.",
       "price": "RM 7.90",
       "category": "Rice Sets",
-      "image": "/images/dishes/fried-rice.jpg",
+      "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=800&h=600&fit=crop",
       "tags": []
     },
     {
@@ -72,7 +72,7 @@
       "description": "Tender chicken in fragrant curry sauce with steamed rice.",
       "price": "RM 8.50",
       "category": "Rice Sets",
-      "image": "/images/dishes/curry-chicken-rice.jpg",
+      "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=800&h=600&fit=crop",
       "tags": ["spicy"]
     },
     {
@@ -80,7 +80,7 @@
       "description": "Pick any 3 dishes with rice. Starting from RM 3.90 — student favourite.",
       "price": "From RM 3.90",
       "category": "Rice Sets",
-      "image": "/images/dishes/economy-rice.jpg",
+      "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=800&h=600&fit=crop",
       "tags": ["cheap"]
     },
     {
@@ -88,7 +88,7 @@
       "description": "Crispy fried spring rolls with sweet chili sauce.",
       "price": "RM 4.50",
       "category": "Snacks",
-      "image": "/images/dishes/spring-rolls.jpg",
+      "image": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=800&h=600&fit=crop",
       "tags": ["vegetarian"]
     },
     {
@@ -96,7 +96,7 @@
       "description": "Crispy fried tofu cubes with dipping sauce.",
       "price": "RM 4.00",
       "category": "Snacks",
-      "image": "/images/dishes/fried-tofu.jpg",
+      "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&h=600&fit=crop",
       "tags": ["vegetarian"]
     },
     {
@@ -104,7 +104,7 @@
       "description": "Crispy fried chicken wings, marinated in house spices.",
       "price": "RM 6.00",
       "category": "Snacks",
-      "image": "/images/dishes/chicken-wings.jpg",
+      "image": "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=800&h=600&fit=crop",
       "tags": []
     },
     {
@@ -112,7 +112,7 @@
       "description": "Our signature drink — fresh longan in honey milk. Refreshing and mildly sweet.",
       "price": "RM 5.50",
       "category": "Drinks",
-      "image": "/images/dishes/honey-milk-longan.jpg",
+      "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=800&h=600&fit=crop",
       "tags": ["signature"]
     },
     {
@@ -120,7 +120,7 @@
       "description": "Traditional Malaysian black coffee. Strong and aromatic.",
       "price": "RM 2.50",
       "category": "Drinks",
-      "image": "/images/dishes/kopi-o.jpg",
+      "image": "https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=800&h=600&fit=crop",
       "tags": ["cheap"]
     },
     {
@@ -128,7 +128,7 @@
       "description": "Malaysian pulled tea with condensed milk. Creamy and comforting.",
       "price": "RM 2.80",
       "category": "Drinks",
-      "image": "/images/dishes/teh-tarik.jpg",
+      "image": "https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9?w=800&h=600&fit=crop",
       "tags": ["cheap"]
     },
     {
@@ -136,7 +136,7 @@
       "description": "Fresh lemon in iced water. Simple and refreshing.",
       "price": "RM 2.00",
       "category": "Drinks",
-      "image": "/images/dishes/lemon-water.jpg",
+      "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=800&h=600&fit=crop",
       "tags": ["cheap", "vegetarian"]
     },
     {
@@ -144,7 +144,7 @@
       "description": "Bak kut teh + rice + youtiao + drink. Complete and satisfying.",
       "price": "RM 14.90",
       "category": "Set Meals",
-      "image": "/images/dishes/bkt-set.jpg",
+      "image": "https://images.unsplash.com/photo-1607301406259-dfb34844a70c?w=800&h=600&fit=crop",
       "tags": []
     },
     {
@@ -152,7 +152,7 @@
       "description": "Chicken chop + spaghetti + drink. Best value for hungry students.",
       "price": "RM 12.90",
       "category": "Set Meals",
-      "image": "/images/dishes/western-set.jpg",
+      "image": "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?w=800&h=600&fit=crop",
       "tags": []
     },
     {
@@ -160,7 +160,7 @@
       "description": "Economy rice + drink. Budget-friendly and filling.",
       "price": "RM 5.90",
       "category": "Set Meals",
-      "image": "/images/dishes/student-special.jpg",
+      "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=800&h=600&fit=crop",
       "tags": ["cheap"]
     }
   ]
