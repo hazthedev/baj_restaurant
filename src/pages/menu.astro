@@ -1,0 +1,65 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import WhatsAppFloat from '../components/WhatsAppFloat.astro';
+import Container from '../components/Container.astro';
+import Button from '../components/Button.astro';
+import MenuTabs from '../components/MenuTabs';
+import MenuGrid from '../components/MenuGrid';
+import menuData from '../data/menu.json';
+import siteData from '../data/site.json';
+
+const { categories, items } = menuData;
+const whatsappNumber = siteData.whatsapp;
+---
+
+<BaseLayout
+  title="The Menu | B.A.J Restaurant Setapak | Cheese Bak Kut Teh & More"
+  description="Cheese bak kut teh, plus 80 other reasons to stay. Full menu with prices — Bak Kut Teh, Spaghetti & Western, Rice Sets, Snacks, Drinks, and Set Meals."
+>
+  <Navbar currentPage="menu" />
+  
+  <!-- Menu Hero -->
+  <section class="py-16 md:py-20 bg-cream">
+    <Container>
+      <div class="text-center max-w-3xl mx-auto">
+        <h1 class="font-display text-4xl md:text-5xl lg:text-6xl text-ink-black">The Menu</h1>
+        <p class="text-soy-brown text-lg md:text-xl mt-4">
+          Cheese bak kut teh, plus 80 other reasons to stay.
+        </p>
+      </div>
+    </Container>
+  </section>
+
+  <!-- Interactive Menu -->
+  <div class="min-h-[60vh]">
+    <MenuTabs categories={categories} activeCategory="All" client:load />
+    <Container className="py-8">
+      <MenuGrid items={items} activeCategory="All" client:load />
+    </Container>
+  </div>
+
+  <!-- Order CTA -->
+  <section class="py-16 md:py-20 bg-cream">
+    <Container>
+      <div class="text-center max-w-2xl mx-auto">
+        <h2 class="font-display text-3xl md:text-4xl text-ink-black mb-4">Hungry?</h2>
+        <p class="text-soy-brown text-lg mb-8">
+          WhatsApp us for pre-orders, large groups, or to ask if the BKT is on tonight.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <Button href={`https://wa.me/${whatsappNumber}`}>
+            WhatsApp Order
+          </Button>
+          <Button href={siteData.alacarteUrl} variant="outline">
+            Order on alacarte.my
+          </Button>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <Footer />
+  <WhatsAppFloat />
+</BaseLayout>
