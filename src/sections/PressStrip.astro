@@ -1,0 +1,28 @@
+---
+import Container from '../components/Container.astro';
+import pressData from '../data/press.json';
+---
+
+<section class="py-16 md:py-20">
+  <Container>
+    <div class="text-center mb-10">
+      <p class="uppercase tracking-widest text-soy-brown text-sm font-medium">As featured in</p>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+      {pressData.map((press) => (
+        <a
+          href={press.url}
+          target="_blank"
+          rel="noopener"
+          class="group text-center p-4 rounded-lg hover:bg-cream transition-colors"
+        >
+          <h3 class="font-display text-xl md:text-2xl text-ink-black group-hover:text-cheese-yellow transition-colors">
+            {press.name}
+          </h3>
+          <p class="text-soy-brown text-xs mt-1">{press.description}</p>
+          <p class="text-soy-brown text-sm mt-3 italic">"{press.quote}"</p>
+        </a>
+      ))}
+    </div>
+  </Container>
+</section>
