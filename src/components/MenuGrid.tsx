@@ -51,10 +51,10 @@ export default function MenuGrid({ items, activeCategory }: MenuGridProps) {
           <button
             key={option.key}
             onClick={() => toggleFilter(option.key)}
-            className={`px-3 py-1.5 text-sm font-medium rounded-full transition-all ${
+            className={`px-3 py-1.5 text-sm font-medium rounded-full transition-all duration-300 ease-out ${
               activeFilters.includes(option.key)
                 ? 'bg-cheese-yellow text-ink-black'
-                : 'bg-cream text-soy-brown hover:bg-cheese-yellow/30'
+                : 'bg-cream text-soy-brown hover:bg-cheese-yellow/30 hover:scale-[1.03]'
             }`}
           >
             {option.label}
@@ -78,7 +78,7 @@ export default function MenuGrid({ items, activeCategory }: MenuGridProps) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: index * 0.05 }}
-            className={`bg-cream rounded-lg overflow-hidden transition-all duration-250 hover:-translate-y-1 hover:shadow-lg hover:shadow-cheese-yellow/20 ${
+            className={`bg-cream rounded-lg overflow-hidden transition-all duration-300 ease-out will-change-transform hover:-translate-y-1.5 hover:shadow-xl hover:shadow-cheese-yellow/15 ${
               item.featured ? 'sm:col-span-2' : ''
             }`}
           >
@@ -87,7 +87,7 @@ export default function MenuGrid({ items, activeCategory }: MenuGridProps) {
                 <img
                   src={item.image}
                   alt={item.name}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover transition-transform duration-500 ease-out hover:scale-105"
                   loading="lazy"
                 />
               </div>

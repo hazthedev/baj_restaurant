@@ -9,7 +9,7 @@ const { currentPage = 'home' } = Astro.props;
 const whatsappNumber = import.meta.env.PUBLIC_WHATSAPP_NUMBER || '60189888766';
 ---
 
-<nav class="sticky top-0 z-50 bg-bone-white/90 backdrop-blur-md border-b border-soy-brown/10 transition-all duration-250" id="navbar">
+<nav class="sticky top-0 z-50 bg-bone-white/90 backdrop-blur-md border-b border-soy-brown/10 transition-all duration-300 ease-out" id="navbar">
   <Container>
     <div class="flex items-center justify-between h-16 md:h-20">
       <!-- Logo -->
@@ -20,20 +20,20 @@ const whatsappNumber = import.meta.env.PUBLIC_WHATSAPP_NUMBER || '60189888766';
 
       <!-- Desktop Navigation -->
       <div class="hidden md:flex items-center gap-8">
-        <a href="/" class={`text-sm font-medium transition-colors ${currentPage === 'home' ? 'text-cheese-yellow' : 'text-soy-brown hover:text-ink-black'}`}>
+        <a href="/" class={`text-sm font-medium transition-colors duration-300 ease-out ${currentPage === 'home' ? 'text-cheese-yellow' : 'text-soy-brown hover:text-ink-black'}`}>
           Home
         </a>
-        <a href="/menu" class={`text-sm font-medium transition-colors ${currentPage === 'menu' ? 'text-cheese-yellow' : 'text-soy-brown hover:text-ink-black'}`}>
+        <a href="/menu" class={`text-sm font-medium transition-colors duration-300 ease-out ${currentPage === 'menu' ? 'text-cheese-yellow' : 'text-soy-brown hover:text-ink-black'}`}>
           Menu
         </a>
-        <a href="/story" class={`text-sm font-medium transition-colors ${currentPage === 'story' ? 'text-cheese-yellow' : 'text-soy-brown hover:text-ink-black'}`}>
+        <a href="/story" class={`text-sm font-medium transition-colors duration-300 ease-out ${currentPage === 'story' ? 'text-cheese-yellow' : 'text-soy-brown hover:text-ink-black'}`}>
           Story & Visit
         </a>
         <a
           href={`https://wa.me/${whatsappNumber}`}
           target="_blank"
           rel="noopener"
-          class="bg-cheese-yellow text-ink-black px-4 py-2 rounded-full text-sm font-medium hover:bg-soft-mustard transition-colors"
+          class="bg-cheese-yellow text-ink-black px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ease-out hover:bg-soft-mustard hover:scale-[1.03]"
         >
           WhatsApp
         </a>
@@ -50,20 +50,20 @@ const whatsappNumber = import.meta.env.PUBLIC_WHATSAPP_NUMBER || '60189888766';
     <!-- Mobile Menu -->
     <div class="md:hidden hidden pb-4" id="mobile-menu">
       <div class="flex flex-col gap-4">
-        <a href="/" class={`text-sm font-medium transition-colors ${currentPage === 'home' ? 'text-cheese-yellow' : 'text-soy-brown hover:text-ink-black'}`}>
+        <a href="/" class={`text-sm font-medium transition-colors duration-300 ease-out ${currentPage === 'home' ? 'text-cheese-yellow' : 'text-soy-brown hover:text-ink-black'}`}>
           Home
         </a>
-        <a href="/menu" class={`text-sm font-medium transition-colors ${currentPage === 'menu' ? 'text-cheese-yellow' : 'text-soy-brown hover:text-ink-black'}`}>
+        <a href="/menu" class={`text-sm font-medium transition-colors duration-300 ease-out ${currentPage === 'menu' ? 'text-cheese-yellow' : 'text-soy-brown hover:text-ink-black'}`}>
           Menu
         </a>
-        <a href="/story" class={`text-sm font-medium transition-colors ${currentPage === 'story' ? 'text-cheese-yellow' : 'text-soy-brown hover:text-ink-black'}`}>
+        <a href="/story" class={`text-sm font-medium transition-colors duration-300 ease-out ${currentPage === 'story' ? 'text-cheese-yellow' : 'text-soy-brown hover:text-ink-black'}`}>
           Story & Visit
         </a>
         <a
           href={`https://wa.me/${whatsappNumber}`}
           target="_blank"
           rel="noopener"
-          class="bg-cheese-yellow text-ink-black px-4 py-2 rounded-full text-sm font-medium hover:bg-soft-mustard transition-colors text-center"
+          class="bg-cheese-yellow text-ink-black px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ease-out hover:bg-soft-mustard text-center"
         >
           WhatsApp
         </a>

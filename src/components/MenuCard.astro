@@ -13,7 +13,7 @@ interface Props {
 const { name, chineseName, description, price, image, signature = false, featuredIn, className = '' } = Astro.props;
 ---
 
-<div class={`bg-cream rounded-lg overflow-hidden transition-all duration-250 hover:-translate-y-1 hover:shadow-lg hover:shadow-cheese-yellow/20 ${className}`}>
+<div class={`bg-cream rounded-lg overflow-hidden transition-all duration-300 ease-out will-change-transform hover:-translate-y-1.5 hover:shadow-xl hover:shadow-cheese-yellow/15 ${className}`}>
   {image && (
     <div class="aspect-[4/3] overflow-hidden">
       <img
