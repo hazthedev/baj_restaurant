@@ -1,0 +1,18 @@
+---
+import Eyebrow from './Eyebrow.astro';
+
+interface Props {
+  eyebrow?: string;
+  headline: string;
+  subhead?: string;
+  className?: string;
+}
+
+const { eyebrow, headline, subhead, className = '' } = Astro.props;
+---
+
+<div class={`text-center max-w-3xl mx-auto ${className}`}>
+  {eyebrow && <Eyebrow>{eyebrow}</Eyebrow>}
+  <h2 class="font-display text-4xl md:text-5xl text-ink-black mt-2 mb-4">{headline}</h2>
+  {subhead && <p class="text-soy-brown text-lg">{subhead}</p>}
+</div>

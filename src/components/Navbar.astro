@@ -1,0 +1,82 @@
+---
+import Container from '../components/Container.astro';
+
+interface Props {
+  currentPage?: 'home' | 'menu' | 'story';
+}
+
+const { currentPage = 'home' } = Astro.props;
+const whatsappNumber = import.meta.env.PUBLIC_WHATSAPP_NUMBER || '60189888766';
+---
+
+<nav class="sticky top-0 z-50 bg-bone-white/90 backdrop-blur-md border-b border-soy-brown/10 transition-all duration-250" id="navbar">
+  <Container>
+    <div class="flex items-center justify-between h-16 md:h-20">
+      <!-- Logo -->
+      <a href="/" class="flex flex-col">
+        <span class="font-display text-2xl md:text-3xl text-ink-black leading-none">B.A.J</span>
+        <span class="text-[10px] uppercase tracking-wider text-soy-brown mt-0.5">Restaurant · Setapak · Since 2018</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex items-center gap-8">
+        <a href="/" class={`text-sm font-medium transition-colors ${currentPage === 'home' ? 'text-cheese-yellow' : 'text-soy-brown hover:text-ink-black'}`}>
+          Home
+        </a>
+        <a href="/menu" class={`text-sm font-medium transition-colors ${currentPage === 'menu' ? 'text-cheese-yellow' : 'text-soy-brown hover:text-ink-black'}`}>
+          Menu
+        </a>
+        <a href="/story" class={`text-sm font-medium transition-colors ${currentPage === 'story' ? 'text-cheese-yellow' : 'text-soy-brown hover:text-ink-black'}`}>
+          Story & Visit
+        </a>
+        <a
+          href={`https://wa.me/${whatsappNumber}`}
+          target="_blank"
+          rel="noopener"
+          class="bg-cheese-yellow text-ink-black px-4 py-2 rounded-full text-sm font-medium hover:bg-soft-mustard transition-colors"
+        >
+          WhatsApp
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden p-2" id="mobile-menu-btn" aria-label="Toggle menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden hidden pb-4" id="mobile-menu">
+      <div class="flex flex-col gap-4">
+        <a href="/" class={`text-sm font-medium transition-colors ${currentPage === 'home' ? 'text-cheese-yellow' : 'text-soy-brown hover:text-ink-black'}`}>
+          Home
+        </a>
+        <a href="/menu" class={`text-sm font-medium transition-colors ${currentPage === 'menu' ? 'text-cheese-yellow' : 'text-soy-brown hover:text-ink-black'}`}>
+          Menu
+        </a>
+        <a href="/story" class={`text-sm font-medium transition-colors ${currentPage === 'story' ? 'text-cheese-yellow' : 'text-soy-brown hover:text-ink-black'}`}>
+          Story & Visit
+        </a>
+        <a
+          href={`https://wa.me/${whatsappNumber}`}
+          target="_blank"
+          rel="noopener"
+          class="bg-cheese-yellow text-ink-black px-4 py-2 rounded-full text-sm font-medium hover:bg-soft-mustard transition-colors text-center"
+        >
+          WhatsApp
+        </a>
+      </div>
+    </div>
+  </Container>
+</nav>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  
+  btn?.addEventListener('click', () => {
+    menu?.classList.toggle('hidden');
+  });
+</script>

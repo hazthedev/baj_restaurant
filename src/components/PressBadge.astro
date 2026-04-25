@@ -1,0 +1,25 @@
+---
+interface Props {
+  name: string;
+  quote?: string;
+  url?: string;
+  className?: string;
+}
+
+const { name, quote, url, className = '' } = Astro.props;
+---
+
+<div class={`bg-cream p-4 rounded-lg ${className}`}>
+  <h4 class="font-display text-lg text-ink-black mb-1">{name}</h4>
+  {quote && <p class="text-soy-brown text-sm italic">"{quote}"</p>}
+  {url && (
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener"
+      class="mt-2 inline-block text-cheese-yellow hover:text-soft-mustard text-sm font-medium"
+    >
+      Read more →
+    </a>
+  )}
+</div>
