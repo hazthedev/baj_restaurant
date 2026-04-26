@@ -24,7 +24,7 @@
       "description": "Classic herbal broth with pork ribs, garlic, and mushrooms. The traditional way.",
       "price": "RM 10.90",
       "category": "Bak Kut Teh",
-      "image": "https://images.unsplash.com/photo-1607301406259-dfb34844a70c?w=800&h=600&fit=crop",
+      "image": "https://images.unsplash.com/photo-1547592180-85f173990554?w=800&h=600&fit=crop",
       "tags": ["hot"]
     },
     {
@@ -32,7 +32,7 @@
       "description": "Braised pork in dark soy sauce with dried chilies and lady fingers. Intense and aromatic.",
       "price": "RM 11.90",
       "category": "Bak Kut Teh",
-      "image": "https://images.unsplash.com/photo-1541544744-375cfed75400?w=800&h=600&fit=crop",
+      "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=800&h=600&fit=crop",
       "tags": ["spicy"]
     },
     {
@@ -144,7 +144,7 @@
       "description": "Bak kut teh + rice + youtiao + drink. Complete and satisfying.",
       "price": "RM 14.90",
       "category": "Set Meals",
-      "image": "https://images.unsplash.com/photo-1607301406259-dfb34844a70c?w=800&h=600&fit=crop",
+      "image": "https://images.unsplash.com/photo-1604152135912-04a022e23696?w=800&h=600&fit=crop",
       "tags": []
     },
     {
