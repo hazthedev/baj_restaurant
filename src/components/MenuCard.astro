@@ -5,25 +5,28 @@ interface Props {
   name: string;
   description: string;
   price: string;
-  image?: string;
+  icon?: string;
   signature?: boolean;
   featuredIn?: string;
   tier?: 'green' | 'red' | 'gold' | 'special';
   className?: string;
 }
 
-const { name, description, price, image, signature = false, featuredIn, tier, className = '' } = Astro.props;
+const { name, description, price, icon, signature = false, featuredIn, tier, className = '' } = Astro.props;
+
+const tierTile: Record<string, string> = {
+  green: 'bg-gradient-to-br from-wasabi-green/15 to-wasabi-green/5',
+  red: 'bg-gradient-to-br from-salmon-red/15 to-monster-coral/5',
+  gold: 'bg-gradient-to-br from-gold/20 to-gold/5',
+  special: 'bg-gradient-to-br from-monster-coral/15 to-deep-navy/5',
+};
+const tile = tier ? tierTile[tier] : 'bg-gradient-to-br from-cream to-cheese-yellow/10';
 ---
 
 <div class={`bg-cream rounded-lg overflow-hidden transition-all duration-300 ease-out will-change-transform hover:-translate-y-1.5 hover:shadow-xl hover:shadow-cheese-yellow/15 ${className}`}>
-  {image && (
-    <div class="aspect-[4/3] overflow-hidden">
-      <img
-        src={image}
-        alt={name}
-        class="w-full h-full object-cover"
-        loading="lazy"
-      />
+  {icon && (
+    <div class={`aspect-[4/3] flex items-center justify-center ${tile}`}>
+      <span class="text-7xl md:text-8xl select-none" aria-hidden="true">{icon}</span>
     </div>
   )}
   <div class="p-4">

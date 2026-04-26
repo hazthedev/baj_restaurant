@@ -18,13 +18,8 @@ import locationsData from '../data/locations.json';
           href={`/locations#${location.id}`}
           class="group bg-pure-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
         >
-          <div class="aspect-[4/3] bg-slate/10">
-            <img
-              src={location.image}
-              alt={location.name}
-              class="w-full h-full object-cover"
-              loading="lazy"
-            />
+          <div class="aspect-[4/3] flex items-center justify-center bg-gradient-to-br from-deep-navy/5 via-monster-coral/10 to-cheese-yellow/15">
+            <span class="text-7xl select-none transition-transform duration-300 group-hover:scale-110" aria-hidden="true">{location.icon}</span>
           </div>
           <div class="p-4">
             <h3 class="font-display text-xl text-deep-navy group-hover:text-monster-coral transition-colors">

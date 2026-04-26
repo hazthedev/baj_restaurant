@@ -6,13 +6,20 @@ interface MenuItem {
   description: string;
   price: string;
   category: string;
-  image: string;
+  icon?: string;
   tags: string[];
   signature?: boolean;
   featured?: boolean;
   featuredIn?: string;
   tier?: 'green' | 'red' | 'gold' | 'special';
 }
+
+const tierTile: Record<string, string> = {
+  green: 'bg-gradient-to-br from-wasabi-green/15 to-wasabi-green/5',
+  red: 'bg-gradient-to-br from-salmon-red/15 to-monster-coral/5',
+  gold: 'bg-gradient-to-br from-gold/20 to-gold/5',
+  special: 'bg-gradient-to-br from-monster-coral/15 to-deep-navy/5',
+};
 
 interface MenuGridProps {
   items: MenuItem[];
@@ -125,14 +132,11 @@ export default function MenuGrid({ items, activeCategory }: MenuGridProps) {
               item.featured ? 'sm:col-span-2' : ''
             }`}
           >
-            {item.image && (
-              <div className={`overflow-hidden ${item.featured ? 'aspect-[16/9]' : 'aspect-[4/3]'}`}>
-                <img
-                  src={item.image}
-                  alt={item.name}
-                  className="w-full h-full object-cover transition-transform duration-500 ease-out hover:scale-105"
-                  loading="lazy"
-                />
+            {item.icon && (
+              <div className={`flex items-center justify-center ${item.featured ? 'aspect-[16/9]' : 'aspect-[4/3]'} ${item.tier ? tierTile[item.tier] : 'bg-gradient-to-br from-soft-white to-cheese-yellow/10'}`}>
+                <span className={`select-none transition-transform duration-500 ease-out hover:scale-110 ${item.featured ? 'text-8xl md:text-9xl' : 'text-7xl md:text-8xl'}`} aria-hidden="true">
+                  {item.icon}
+                </span>
               </div>
             )}
             <div className="p-4">

@@ -29,15 +29,14 @@ import Eyebrow from '../components/Eyebrow.astro';
         </p>
       </div>
 
-      <!-- Image -->
+      <!-- Icon Tile -->
       <div class="order-1 lg:order-2">
-        <div class="aspect-[4/3] rounded-2xl overflow-hidden bg-soy-black/10">
-          <img
-            src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=1200&h=900&fit=crop"
-            alt="Fresh salmon nigiri sushi stacked on a plate"
-            class="w-full h-full object-cover"
-            loading="eager"
-          />
+        <div class="aspect-[4/3] rounded-2xl flex items-center justify-center bg-gradient-to-br from-monster-coral/15 via-cheese-yellow/15 to-wasabi-green/10 relative overflow-hidden">
+          <div class="absolute inset-0 opacity-10 text-[24rem] flex items-center justify-center select-none" aria-hidden="true">🍣</div>
+          <div class="relative text-center">
+            <div class="text-9xl md:text-[10rem] select-none" aria-hidden="true">🍣</div>
+            <div class="font-accent text-2xl text-monster-coral mt-2 -rotate-2 inline-block">eat the monster</div>
+          </div>
         </div>
       </div>
     </div>
