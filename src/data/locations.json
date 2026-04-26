@@ -9,9 +9,9 @@
     "phone": "+60 14-372 2425",
     "whatsapp": "+60 14-372 2425",
     "hours": "10:00 AM – 10:00 PM daily",
-    "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.8!2d101.72!3d3.20!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37f0c3e9e1c5%3A0x3e5b5b5b5b5b5b5b!2sSetapak%20Central!5e0!3m2!1sen!2smy",
+    "googleMapsEmbedUrl": "https://maps.google.com/maps?q=Setapak%20Central%2C%2067%20Jalan%20Taman%20Ibu%20Kota%2C%20Kuala%20Lumpur&output=embed",
     "foodpandaUrl": "https://foodpanda.my/sushi-monster-setapak",
-    "image": "/images/locations/setapak.jpg"
+    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&h=600&fit=crop"
   },
   {
     "id": "gardens-mall",
@@ -23,9 +23,9 @@
     "phone": "+60 14-372 2425",
     "whatsapp": "+60 14-372 2425",
     "hours": "10:00 AM – 10:00 PM daily",
-    "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.8!2d101.67!3d3.12!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37f0c3e9e1c5%3A0x3e5b5b5b5b5b5b5b!2sThe%20Gardens%20Mall!5e0!3m2!1sen!2smy",
+    "googleMapsEmbedUrl": "https://maps.google.com/maps?q=The%20Gardens%20Mall%2C%20Mid%20Valley%20City%2C%20Kuala%20Lumpur&output=embed",
     "foodpandaUrl": "https://foodpanda.my/sushi-monster-gardens",
-    "image": "/images/locations/gardens.jpg"
+    "image": "https://images.unsplash.com/photo-1591814468924-caf88d1232e1?w=800&h=600&fit=crop"
   },
   {
     "id": "bangsar-shopping",
@@ -37,9 +37,9 @@
     "phone": "+60 14-372 2425",
     "whatsapp": "+60 14-372 2425",
     "hours": "10:00 AM – 10:00 PM daily",
-    "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.8!2d101.67!3d3.13!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37f0c3e9e1c5%3A0x3e5b5b5b5b5b5b5b!2sBangsar%20Shopping%20Centre!5e0!3m2!1sen!2smy",
+    "googleMapsEmbedUrl": "https://maps.google.com/maps?q=Bangsar%20Shopping%20Centre%2C%20Jalan%20Maarof%2C%20Kuala%20Lumpur&output=embed",
     "foodpandaUrl": "https://foodpanda.my/sushi-monster-bangsar",
-    "image": "/images/locations/bangsar.jpg"
+    "image": "https://images.unsplash.com/photo-1555529733-0e670560f7e1?w=800&h=600&fit=crop"
   },
   {
     "id": "vipod-klcc",
@@ -51,8 +51,8 @@
     "phone": "+60 14-372 2425",
     "whatsapp": "+60 14-372 2425",
     "hours": "10:00 AM – 10:00 PM daily",
-    "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.8!2d101.71!3d3.15!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37f0c3e9e1c5%3A0x3e5b5b5b5b5b5b5b!2sVipod%20Residences!5e0!3m2!1sen!2smy",
+    "googleMapsEmbedUrl": "https://maps.google.com/maps?q=Vipod%20Residences%2C%206%20Jalan%20Kia%20Peng%2C%20Kuala%20Lumpur&output=embed",
     "foodpandaUrl": "https://foodpanda.my/sushi-monster-vipod",
-    "image": "/images/locations/vipod.jpg"
+    "image": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&h=600&fit=crop"
   }
 ]
