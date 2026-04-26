@@ -1,167 +1,209 @@
 {
   "categories": [
-    "Bak Kut Teh",
-    "Spaghetti & Western",
-    "Rice Sets",
-    "Snacks",
-    "Drinks",
+    "Sushi & Sashimi",
+    "Maki Rolls",
+    "Hot Dishes",
+    "Tempura",
+    "Donburi",
     "Set Meals"
   ],
   "items": [
     {
-      "name": "Cheese Bak Kut Teh",
-      "description": "Our viral invention — tender pork chunks, fresh okra, aromatic herbal broth, topped with melted cheese. The dish that put us on the map.",
-      "price": "RM 12.90",
-      "category": "Bak Kut Teh",
-      "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800&h=600&fit=crop",
-      "tags": ["signature", "hot"],
+      "name": "Salmon Nigiri",
+      "description": "Melt-in-the-mouth fresh salmon over seasoned rice. Our most-ordered. Get it with the wasabi.",
+      "price": "RM 3.90",
+      "category": "Sushi & Sashimi",
+      "image": "/images/dishes/01.jpg",
+      "tags": ["signature", "halal"],
       "signature": true,
       "featured": true,
-      "featuredIn": "SETHLUI"
+      "tier": "red",
+      "featuredIn": "KL TikTok creators"
     },
     {
-      "name": "Soup Bak Kut Teh",
-      "description": "Classic herbal broth with pork ribs, garlic, and mushrooms. The traditional way.",
-      "price": "RM 10.90",
-      "category": "Bak Kut Teh",
-      "image": "https://images.unsplash.com/photo-1547592180-85f173990554?w=800&h=600&fit=crop",
-      "tags": ["hot"]
+      "name": "Tuna Nigiri",
+      "description": "Premium tuna on seasoned rice. Clean, fresh, and perfectly sliced.",
+      "price": "RM 3.90",
+      "category": "Sushi & Sashimi",
+      "image": "/images/dishes/02.jpg",
+      "tags": ["halal"],
+      "tier": "red"
     },
     {
-      "name": "Dry Bak Kut Teh",
-      "description": "Braised pork in dark soy sauce with dried chilies and lady fingers. Intense and aromatic.",
-      "price": "RM 11.90",
-      "category": "Bak Kut Teh",
-      "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=800&h=600&fit=crop",
-      "tags": ["spicy"]
+      "name": "Tamago Nigiri",
+      "description": "Sweet Japanese omelette over rice. A favorite for kids and first-timers.",
+      "price": "RM 1.90",
+      "category": "Sushi & Sashimi",
+      "image": "/images/dishes/03.jpg",
+      "tags": ["halal", "vegetarian"],
+      "tier": "green"
     },
     {
-      "name": "Creamy Chicken Cutlet Spaghetti",
-      "description": "Crispy chicken cutlet over spaghetti in rich cream sauce. A fan favourite for a reason.",
-      "price": "RM 9.90",
-      "category": "Spaghetti & Western",
-      "image": "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?w=800&h=600&fit=crop",
-      "tags": ["signature"]
+      "name": "Salmon Sashimi",
+      "description": "Fresh salmon slices served with pickled ginger and wasabi. Pure flavor.",
+      "price": "RM 5.90",
+      "category": "Sushi & Sashimi",
+      "image": "/images/dishes/04.jpg",
+      "tags": ["signature", "halal"],
+      "tier": "gold"
     },
     {
-      "name": "Chicken Chop",
-      "description": "Grilled chicken chop with black pepper sauce, served with fries and coleslaw.",
-      "price": "RM 8.90",
-      "category": "Spaghetti & Western",
-      "image": "https://images.unsplash.com/photo-1432139555190-58524dae6a55?w=800&h=600&fit=crop",
-      "tags": []
+      "name": "Unagi Maki Rolls",
+      "description": "Grilled eel with cucumber, wrapped in nori and rice. Sweet and savory.",
+      "price": "RM 3.90",
+      "category": "Maki Rolls",
+      "image": "/images/dishes/05.jpg",
+      "tags": ["signature", "halal"],
+      "tier": "red"
     },
     {
-      "name": "Spaghetti Bolognese",
-      "description": "Classic beef bolognese sauce over al dente spaghetti.",
-      "price": "RM 8.50",
-      "category": "Spaghetti & Western",
-      "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=800&h=600&fit=crop",
-      "tags": []
+      "name": "California Maki",
+      "description": "Crab stick, avocado, and cucumber. The classic roll everyone loves.",
+      "price": "RM 1.90",
+      "category": "Maki Rolls",
+      "image": "/images/dishes/06.jpg",
+      "tags": ["halal"],
+      "tier": "green"
     },
     {
-      "name": "Fried Rice with Chicken",
-      "description": "Wok-hei fried rice with diced chicken, eggs, and spring onions.",
-      "price": "RM 7.90",
-      "category": "Rice Sets",
-      "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=800&h=600&fit=crop",
-      "tags": []
+      "name": "Spicy Salmon Roll",
+      "description": "Salmon with spicy mayo and cucumber. A kick of heat with every bite.",
+      "price": "RM 3.90",
+      "category": "Maki Rolls",
+      "image": "/images/dishes/07.jpg",
+      "tags": ["spicy", "halal"],
+      "tier": "red"
     },
     {
-      "name": "Curry Chicken Rice",
-      "description": "Tender chicken in fragrant curry sauce with steamed rice.",
-      "price": "RM 8.50",
-      "category": "Rice Sets",
-      "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=800&h=600&fit=crop",
-      "tags": ["spicy"]
+      "name": "Tempura Soba",
+      "description": "Celebrated for flavor and texture. Hot buckwheat noodles with crispy tempura shrimp.",
+      "price": "RM 5.90",
+      "category": "Hot Dishes",
+      "image": "/images/dishes/08.jpg",
+      "tags": ["signature", "hot", "halal"],
+      "tier": "gold"
     },
     {
-      "name": "Economy Rice (3 dishes)",
-      "description": "Pick any 3 dishes with rice. Starting from RM 3.90 — student favourite.",
-      "price": "From RM 3.90",
-      "category": "Rice Sets",
-      "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=800&h=600&fit=crop",
-      "tags": ["cheap"]
+      "name": "Kitsune Udon",
+      "description": "Thick wheat noodles in hot dashi with sweet fried tofu. Comfort in a bowl.",
+      "price": "RM 4.90",
+      "category": "Hot Dishes",
+      "image": "/images/dishes/09.jpg",
+      "tags": ["hot", "halal", "vegetarian"],
+      "tier": "red"
     },
     {
-      "name": "Spring Rolls (3 pcs)",
-      "description": "Crispy fried spring rolls with sweet chili sauce.",
-      "price": "RM 4.50",
-      "category": "Snacks",
-      "image": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=800&h=600&fit=crop",
-      "tags": ["vegetarian"]
+      "name": "Salmon Shioyaki",
+      "description": "Grilled salmon fillet with sea salt. Simple, healthy, delicious.",
+      "price": "RM 5.90",
+      "category": "Hot Dishes",
+      "image": "/images/dishes/10.jpg",
+      "tags": ["halal"],
+      "tier": "gold"
     },
     {
-      "name": "Fried Tofu",
-      "description": "Crispy fried tofu cubes with dipping sauce.",
-      "price": "RM 4.00",
-      "category": "Snacks",
-      "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&h=600&fit=crop",
-      "tags": ["vegetarian"]
+      "name": "Saba Shioyaki",
+      "description": "Grilled mackerel with a squeeze of lemon. Traditional Japanese flavor.",
+      "price": "RM 4.90",
+      "category": "Hot Dishes",
+      "image": "/images/dishes/11.jpg",
+      "tags": ["halal"],
+      "tier": "red"
     },
     {
-      "name": "Chicken Wings (3 pcs)",
-      "description": "Crispy fried chicken wings, marinated in house spices.",
-      "price": "RM 6.00",
-      "category": "Snacks",
-      "image": "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=800&h=600&fit=crop",
-      "tags": []
+      "name": "Teriyaki Chicken",
+      "description": "Grilled chicken glazed with sweet teriyaki sauce. A crowd favorite.",
+      "price": "RM 3.90",
+      "category": "Hot Dishes",
+      "image": "/images/dishes/12.jpg",
+      "tags": ["halal"],
+      "tier": "red"
     },
     {
-      "name": "Honey Milk Longan",
-      "description": "Our signature drink — fresh longan in honey milk. Refreshing and mildly sweet.",
-      "price": "RM 5.50",
-      "category": "Drinks",
-      "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=800&h=600&fit=crop",
-      "tags": ["signature"]
+      "name": "Prawn Tempura",
+      "description": "Crispy battered prawns served with tempura sauce. Light and crunchy.",
+      "price": "RM 3.90",
+      "category": "Tempura",
+      "image": "/images/dishes/01.jpg",
+      "tags": ["halal"],
+      "tier": "red"
     },
     {
-      "name": "Kopi O (Hot/Iced)",
-      "description": "Traditional Malaysian black coffee. Strong and aromatic.",
-      "price": "RM 2.50",
-      "category": "Drinks",
-      "image": "https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=800&h=600&fit=crop",
-      "tags": ["cheap"]
+      "name": "Vegetable Tempura",
+      "description": "Assorted seasonal vegetables in crispy tempura batter.",
+      "price": "RM 1.90",
+      "category": "Tempura",
+      "image": "/images/dishes/02.jpg",
+      "tags": ["halal", "vegetarian"],
+      "tier": "green"
     },
     {
-      "name": "Teh Tarik",
-      "description": "Malaysian pulled tea with condensed milk. Creamy and comforting.",
-      "price": "RM 2.80",
-      "category": "Drinks",
-      "image": "https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9?w=800&h=600&fit=crop",
-      "tags": ["cheap"]
+      "name": "Soft Shell Crab",
+      "description": "Crispy whole soft shell crab. The perfect crunch in every bite.",
+      "price": "RM 5.90",
+      "category": "Tempura",
+      "image": "/images/dishes/03.jpg",
+      "tags": ["halal"],
+      "tier": "gold"
     },
     {
-      "name": "Lemon Water",
-      "description": "Fresh lemon in iced water. Simple and refreshing.",
-      "price": "RM 2.00",
-      "category": "Drinks",
-      "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=800&h=600&fit=crop",
-      "tags": ["cheap", "vegetarian"]
+      "name": "Chicken Teriyaki Don",
+      "description": "Grilled chicken over steamed rice with teriyaki glaze and sesame.",
+      "price": "RM 4.90",
+      "category": "Donburi",
+      "image": "/images/dishes/04.jpg",
+      "tags": ["halal"],
+      "tier": "red"
     },
     {
-      "name": "BKT Set Meal",
-      "description": "Bak kut teh + rice + youtiao + drink. Complete and satisfying.",
-      "price": "RM 14.90",
-      "category": "Set Meals",
-      "image": "https://images.unsplash.com/photo-1604152135912-04a022e23696?w=800&h=600&fit=crop",
-      "tags": []
+      "name": "Salmon Don",
+      "description": "Fresh salmon cubes over rice with special sauce. A deconstructed favorite.",
+      "price": "RM 5.90",
+      "category": "Donburi",
+      "image": "/images/dishes/05.jpg",
+      "tags": ["halal"],
+      "tier": "gold"
     },
     {
-      "name": "Western Set Meal",
-      "description": "Chicken chop + spaghetti + drink. Best value for hungry students.",
+      "name": "Chuka Kurage",
+      "description": "Seasoned jellyfish salad. Crunchy, tangy, and refreshing.",
+      "price": "RM 1.90",
+      "category": "Hot Dishes",
+      "image": "/images/dishes/06.jpg",
+      "tags": ["halal"],
+      "tier": "green"
+    },
+    {
+      "name": "Yakitori Moriawase",
+      "description": "Assorted grilled chicken skewers. Perfect for sharing.",
+      "price": "RM 3.90",
+      "category": "Hot Dishes",
+      "image": "/images/dishes/07.jpg",
+      "tags": ["halal"],
+      "tier": "red"
+    },
+    {
+      "name": "Monster Lunch Set",
+      "description": "Ramen or rice bowl + 2 sushi + miso soup. Best value for hungry monsters.",
       "price": "RM 12.90",
       "category": "Set Meals",
-      "image": "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?w=800&h=600&fit=crop",
-      "tags": []
+      "image": "/images/dishes/08.jpg",
+      "tags": ["halal"],
+      "tier": "special"
     },
     {
-      "name": "Student Special",
-      "description": "Economy rice + drink. Budget-friendly and filling.",
-      "price": "RM 5.90",
+      "name": "Family Feast Platter",
+      "description": "4-person buffet-style platter. 20 pieces of assorted sushi and sides.",
+      "price": "RM 39.90",
       "category": "Set Meals",
-      "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=800&h=600&fit=crop",
-      "tags": ["cheap"]
+      "image": "/images/dishes/09.jpg",
+      "tags": ["halal"],
+      "tier": "special"
     }
-  ]
+  ],
+  "tiers": {
+    "green": { "name": "Green", "price": "RM 1.90", "color": "#7AB852" },
+    "red": { "name": "Red", "price": "RM 3.90", "color": "#E94B47" },
+    "gold": { "name": "Gold", "price": "RM 5.90+", "color": "#D9A441" }
+  }
 }

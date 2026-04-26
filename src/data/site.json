@@ -1,21 +1,25 @@
 {
-  "name": "B.A.J Restaurant",
-  "tagline": "The cheese bak kut teh place. Above the wet market. Worth the trip.",
-  "address": "1-18 Pasar Jalan Genting Kelang, Prima Setapak 2, 53000 Kuala Lumpur",
-  "phone": "018-988 8766",
-  "whatsapp": "60189888766",
+  "name": "Sushi Monster",
+  "tagline": "Eat like a monster. Pay like a guppy. Halal sushi from RM1.90.",
+  "address": "4 locations across Kuala Lumpur — Setapak Central, The Gardens Mall, Bangsar Shopping Centre, Vipod Residences",
+  "phone": "+60 14-372 2425",
+  "whatsapp": "+60 14-372 2425",
   "hours": {
-    "Monday": "8:00 AM – 3:00 PM, 5:30 PM – 10:00 PM",
-    "Tuesday": "8:00 AM – 3:00 PM, 5:30 PM – 10:00 PM",
-    "Wednesday": "8:00 AM – 3:00 PM, 5:30 PM – 10:00 PM",
-    "Thursday": "8:00 AM – 3:00 PM, 5:30 PM – 10:00 PM",
-    "Friday": "8:00 AM – 3:00 PM, 5:30 PM – 10:00 PM",
-    "Saturday": "8:00 AM – 3:00 PM, 5:30 PM – 10:00 PM",
-    "Sunday": "Closed"
+    "Monday": "10:00 AM – 10:00 PM",
+    "Tuesday": "10:00 AM – 10:00 PM",
+    "Wednesday": "10:00 AM – 10:00 PM",
+    "Thursday": "10:00 AM – 10:00 PM",
+    "Friday": "10:00 AM – 10:00 PM",
+    "Saturday": "10:00 AM – 10:00 PM",
+    "Sunday": "10:00 AM – 10:00 PM"
   },
   "socials": {
-    "facebook": "https://www.facebook.com/bajrestaurant/"
+    "facebook": "https://www.facebook.com/sushi.monster.mas",
+    "instagram": "https://www.instagram.com/sushi.monster.my",
+    "tiktok": "https://www.tiktok.com/@sushi.monster.my"
   },
-  "alacarteUrl": "https://alacarte.my/menu/baj-restaurant",
-  "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.5364681670137!2d101.704881!3d3.188444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37f0c3e9e1c5%3A0x3e5b5b5b5b5b5b5b!2sB.A.J%20Restaurant!5e0!3m2!1sen!2smy!4v1234567890"
+  "foodpandaUrl": "https://foodpanda.my/sushi-monster",
+  "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.5364681670137!2d101.704881!3d3.188444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37f0c3e9e1c5%3A0x3e5b5b5b5b5b5b5b!2sSushi%20Monster!5e0!3m2!1sen!2smy!4v1234567890",
+  "halal": true,
+  "since": 2019
 }

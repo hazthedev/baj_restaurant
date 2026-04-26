@@ -1,15 +1,27 @@
 @import "tailwindcss";
 
 @theme {
-  /* B.A.J Restaurant Color Palette */
-  --color-bone-white: #F4EFE6;
-  --color-cream: #FBF7EE;
-  --color-ink-black: #1B1714;
-  --color-soy-brown: #5A4A3D;
-  --color-cheese-yellow: #E8B838;
-  --color-bkt-brown: #5A2E1A;
-  --color-chili-red: #C7301B;
-  --color-soft-mustard: #D9A441;
+  /* Sushi Monster Color Palette */
+  --color-soft-white: #FAF6F0;
+  --color-pure-white: #FFFFFF;
+  --color-deep-navy: #1C2742;
+  --color-slate: #5A6478;
+  --color-monster-coral: #E94B47;
+  --color-wasabi-green: #7AB852;
+  --color-salmon-red: #E94B47;
+  --color-gold: #D9A441;
+  --color-sunshine: #F5C84B;
+  --color-soy-black: #15171F;
+
+  /* Legacy aliases for compatibility during transition */
+  --color-bone-white: #FAF6F0;
+  --color-cream: #FFFFFF;
+  --color-ink-black: #1C2742;
+  --color-soy-brown: #5A6478;
+  --color-cheese-yellow: #E94B47;
+  --color-bkt-brown: #15171F;
+  --color-chili-red: #E94B47;
+  --color-soft-mustard: #F5C84B;
 
   /* Typography */
   --font-display: 'DM Serif Display', Georgia, serif;

@@ -1,0 +1,65 @@
+---
+import Container from '../components/Container.astro';
+import Eyebrow from '../components/Eyebrow.astro';
+import PressBadge from '../components/PressBadge.astro';
+import pressData from '../data/press.json';
+---
+
+<section class="py-20 md:py-28 bg-pure-white">
+  <Container>
+    <div class="text-center mb-12">
+      <Eyebrow>THE TIER SYSTEM</Eyebrow>
+      <h2 class="font-display text-4xl md:text-5xl text-deep-navy mt-2">Color-coded. Simple. Cheap.</h2>
+      <p class="text-slate text-lg mt-4 max-w-2xl mx-auto">
+        Pick your color. Pick your price. Stack as many as your monster appetite needs.
+      </p>
+    </div>
+
+    <!-- Tier Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-12">
+      <!-- Green Tier -->
+      <div class="bg-soft-white rounded-2xl p-8 text-center border-2 border-wasabi-green/20 hover:border-wasabi-green transition-colors">
+        <div class="w-16 h-16 rounded-full bg-wasabi-green mx-auto mb-4 flex items-center justify-center">
+          <span class="text-white font-display text-2xl">🟢</span>
+        </div>
+        <h3 class="font-display text-2xl text-deep-navy mb-2">Green</h3>
+        <p class="font-display text-4xl text-wasabi-green mb-4">RM 1.90</p>
+        <p class="text-slate text-sm">Most maki, classic nigiri, tempura vegetables</p>
+      </div>
+
+      <!-- Red Tier -->
+      <div class="bg-soft-white rounded-2xl p-8 text-center border-2 border-salmon-red/20 hover:border-salmon-red transition-colors relative">
+        <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-monster-coral text-white text-xs font-bold px-3 py-1 rounded-full">
+          MOST POPULAR
+        </div>
+        <div class="w-16 h-16 rounded-full bg-salmon-red mx-auto mb-4 flex items-center justify-center">
+          <span class="text-white font-display text-2xl">🔴</span>
+        </div>
+        <h3 class="font-display text-2xl text-deep-navy mb-2">Red</h3>
+        <p class="font-display text-4xl text-salmon-red mb-4">RM 3.90</p>
+        <p class="text-slate text-sm">Salmon, tuna, premium nigiri, tempura prawns</p>
+      </div>
+
+      <!-- Gold Tier -->
+      <div class="bg-soft-white rounded-2xl p-8 text-center border-2 border-gold/20 hover:border-gold transition-colors">
+        <div class="w-16 h-16 rounded-full bg-gold mx-auto mb-4 flex items-center justify-center">
+          <span class="text-white font-display text-2xl">🟡</span>
+        </div>
+        <h3 class="font-display text-2xl text-deep-navy mb-2">Gold</h3>
+        <p class="font-display text-4xl text-gold mb-4">RM 5.90+</p>
+        <p class="text-slate text-sm">Specialty rolls, sashimi, soft shell crab</p>
+      </div>
+    </div>
+
+    <!-- Press Badges -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
+      {pressData.map((press) => (
+        <PressBadge
+          name={press.name}
+          quote={press.quote}
+          url={press.url}
+        />
+      ))}
+    </div>
+  </Container>
+</section>

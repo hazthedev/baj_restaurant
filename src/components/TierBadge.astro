@@ -1,0 +1,48 @@
+---
+interface Props {
+  tier: 'green' | 'red' | 'gold' | 'special';
+  showPrice?: boolean;
+  className?: string;
+}
+
+const { tier, showPrice = false, className = '' } = Astro.props;
+
+const tierConfig = {
+  green: {
+    dot: 'bg-wasabi-green',
+    bg: 'bg-wasabi-green/10',
+    text: 'text-wasabi-green',
+    label: 'RM 1.90',
+    name: 'Green'
+  },
+  red: {
+    dot: 'bg-salmon-red',
+    bg: 'bg-salmon-red/10',
+    text: 'text-salmon-red',
+    label: 'RM 3.90',
+    name: 'Red'
+  },
+  gold: {
+    dot: 'bg-gold',
+    bg: 'bg-gold/10',
+    text: 'text-gold',
+    label: 'RM 5.90+',
+    name: 'Gold'
+  },
+  special: {
+    dot: 'bg-monster-coral',
+    bg: 'bg-monster-coral/10',
+    text: 'text-monster-coral',
+    label: 'Set Menu',
+    name: 'Special'
+  }
+};
+
+const config = tierConfig[tier];
+---
+
+<span class={`inline-flex items-center gap-1.5 ${config.bg} ${config.text} text-xs font-medium px-2 py-1 rounded-full ${className}`}>
+  <span class={`w-2 h-2 rounded-full ${config.dot}`}></span>
+  <span>{config.name}</span>
+  {showPrice && <span class="opacity-75">· {config.label}</span>}
+</span>

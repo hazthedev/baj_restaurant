@@ -1,0 +1,30 @@
+---
+import Container from '../components/Container.astro';
+---
+
+<section class="py-20 md:py-28 bg-deep-navy relative overflow-hidden">
+  <div class="absolute inset-0 opacity-10">
+    <img
+      src="/images/locations/01.jpg"
+      alt="Sushi Monster restaurant interior"
+      class="w-full h-full object-cover"
+      loading="lazy"
+    />
+  </div>
+  <Container className="relative z-10">
+    <div class="max-w-3xl mx-auto text-center">
+      <div class="inline-flex items-center gap-2 bg-wasabi-green text-white px-4 py-2 rounded-full mb-6">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+        </svg>
+        <span class="font-semibold">100% Halal Certified</span>
+      </div>
+      <h2 class="font-display text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-6">
+        100% Pork-Free.<br/>Halal-Certified.
+      </h2>
+      <p class="text-white/70 text-lg leading-relaxed max-w-xl mx-auto">
+        Every Sushi Monster is officially halal-certified. No pork, no alcohol — just Japanese flavors made for everyone. Bring your kids. Bring your grandparents. Bring your monster appetite.
+      </p>
+    </div>
+  </Container>
+</section>

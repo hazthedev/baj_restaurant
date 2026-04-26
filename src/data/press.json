@@ -1,26 +1,26 @@
 [
   {
-    "name": "SETHLUI",
-    "description": "Southeast Asia's biggest food blog",
-    "quote": "The viral cheese bak kut teh you need to try in Setapak",
-    "url": "https://sethlui.com/baj-restaurant-cheese-bak-kut-teh-setapak"
+    "name": "Setapak Central",
+    "description": "Official mall feature",
+    "quote": "Featured dining destination at Setapak Central Mall",
+    "url": "https://setapakcentral.com.my/"
   },
   {
-    "name": "Bangsar Babe",
-    "description": "KL's most respected food blogger",
-    "quote": "Worth the climb up the wet market stairs — the cheese pull is unreal",
-    "url": "https://bangsarbabe.com/baj-restaurant-setapak"
+    "name": "TikTok @izwan.yusop",
+    "description": "Food creator feature",
+    "quote": "114k views on affordable halal sushi feature",
+    "url": "https://www.tiktok.com/@izwan.yusop"
   },
   {
-    "name": "FoodAdvisor",
-    "description": "Malaysia's trusted food guide",
-    "quote": "4.5/5 rating with over 1,200 reviews — a Setapak institution",
-    "url": "https://www.foodadvisor.my/baj-restaurant-setapak"
+    "name": "Lemon8 @char1ingz",
+    "description": "Lifestyle platform feature",
+    "quote": "Featured for value-for-money halal Japanese dining",
+    "url": "https://www.lemon8-app.com/"
   },
   {
-    "name": "Trip.com",
-    "description": "Global travel platform",
-    "quote": "A hidden gem above the wet market — the creamy chicken cutlet spaghetti is a surprise hit",
-    "url": "https://www.trip.com/travel-guide/baj-restaurant-setapak"
+    "name": "FoodPanda",
+    "description": "Official delivery partner",
+    "quote": "Top-rated halal sushi partner on FoodPanda KL",
+    "url": "https://foodpanda.my/sushi-monster"
   }
 ]

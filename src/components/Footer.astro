@@ -2,30 +2,40 @@
 import Container from '../components/Container.astro';
 import siteData from '../data/site.json';
 
-const { name, address, phone, hours, socials, alacarteUrl } = siteData;
+const { name, address, phone, hours, socials, foodpandaUrl } = siteData;
 ---
 
-<footer class="bg-bkt-brown text-cream py-12 md:py-16">
+<footer class="bg-deep-navy text-white py-12 md:py-16">
   <Container>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
       <!-- Brand -->
       <div>
-        <h3 class="font-display text-3xl mb-2">{name}</h3>
-        <p class="text-cream/70 text-sm">Above the wet market in Setapak. Since 2018.</p>
+        <div class="flex items-center gap-2 mb-2">
+          <span class="text-3xl">🍣</span>
+          <h3 class="font-display text-3xl">{name}</h3>
+        </div>
+        <p class="text-white/70 text-sm">Halal Japanese, since 2019. Eat like a monster.</p>
+        <div class="mt-4">
+          <span class="inline-flex items-center gap-2 bg-wasabi-green text-white text-xs font-bold px-3 py-1.5 rounded-full">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+            <span>100% Halal Certified</span>
+          </span>
+        </div>
       </div>
 
       <!-- Visit -->
       <div>
-        <h4 class="font-semibold mb-3">Visit Us</h4>
-        <address class="not-italic text-cream/70 text-sm space-y-1">
-          <p>{address}</p>
-          <p>Phone: {phone}</p>
+        <h4 class="font-semibold mb-3">4 Locations</h4>
+        <address class="not-italic text-white/70 text-sm space-y-1">
+          <p>Setapak Central · The Gardens Mall</p>
+          <p>Bangsar Shopping Centre · Vipod Residences</p>
+          <p class="mt-2">Phone: {phone}</p>
         </address>
-        <div class="mt-3 text-cream/70 text-sm">
-          <p class="font-medium text-cream">Hours</p>
-          {Object.entries(hours).map(([day, time]) => (
-            <p>{day}: {time}</p>
-          ))}
+        <div class="mt-3 text-white/70 text-sm">
+          <p class="font-medium text-white">Mall Hours</p>
+          <p>Daily: 10:00 AM – 10:00 PM</p>
         </div>
       </div>
 
@@ -33,24 +43,29 @@ const { name, address, phone, hours, socials, alacarteUrl } = siteData;
       <div>
         <h4 class="font-semibold mb-3">Order & Follow</h4>
         <div class="space-y-2 text-sm">
-          <a href={alacarteUrl} target="_blank" rel="noopener" class="block text-cream/70 transition-all duration-300 ease-out hover:text-cheese-yellow hover:translate-x-1">
-            Order on alacarte.my →
+          <a href={foodpandaUrl} target="_blank" rel="noopener" class="block text-white/70 transition-all duration-300 ease-out hover:text-monster-coral hover:translate-x-1">
+            Order on FoodPanda →
           </a>
           {socials?.facebook && (
-            <a href={socials.facebook} target="_blank" rel="noopener" class="block text-cream/70 transition-all duration-300 ease-out hover:text-cheese-yellow hover:translate-x-1">
+            <a href={socials.facebook} target="_blank" rel="noopener" class="block text-white/70 transition-all duration-300 ease-out hover:text-monster-coral hover:translate-x-1">
               Facebook →
             </a>
           )}
           {socials?.instagram && (
-            <a href={socials.instagram} target="_blank" rel="noopener" class="block text-cream/70 transition-all duration-300 ease-out hover:text-cheese-yellow hover:translate-x-1">
+            <a href={socials.instagram} target="_blank" rel="noopener" class="block text-white/70 transition-all duration-300 ease-out hover:text-monster-coral hover:translate-x-1">
               Instagram →
+            </a>
+          )}
+          {socials?.tiktok && (
+            <a href={socials.tiktok} target="_blank" rel="noopener" class="block text-white/70 transition-all duration-300 ease-out hover:text-monster-coral hover:translate-x-1">
+              TikTok →
             </a>
           )}
         </div>
       </div>
     </div>
 
-    <div class="mt-8 pt-8 border-t border-cream/20 text-center text-cream/50 text-sm">
+    <div class="mt-8 pt-8 border-t border-white/20 text-center text-white/50 text-sm">
       <p>&copy; {new Date().getFullYear()} {name}. All rights reserved.</p>
     </div>
   </Container>

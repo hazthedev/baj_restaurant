@@ -1,0 +1,50 @@
+---
+import Container from '../components/Container.astro';
+import MenuCard from '../components/MenuCard.astro';
+---
+
+<section class="py-20 md:py-28 bg-soft-white">
+  <Container>
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <h2 class="font-display text-4xl md:text-5xl text-deep-navy">
+        The ones every monster orders.
+      </h2>
+      <p class="text-slate text-lg mt-4">
+        Even the smallest table leaves with a stack.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <MenuCard
+        name="Salmon Nigiri"
+        description="Melt-in-the-mouth fresh salmon over seasoned rice. Our most-ordered."
+        price="RM 3.90"
+        image="/images/dishes/01.jpg"
+        tier="red"
+        signature={true}
+      />
+      <MenuCard
+        name="Tempura Soba"
+        description="Hot buckwheat noodles with crispy tempura shrimp. Celebrated for flavor."
+        price="RM 5.90"
+        image="/images/dishes/08.jpg"
+        tier="gold"
+        signature={true}
+      />
+      <MenuCard
+        name="Unagi Maki"
+        description="Grilled eel with cucumber, wrapped in nori and rice. Sweet and savory."
+        price="RM 3.90"
+        image="/images/dishes/05.jpg"
+        tier="red"
+      />
+      <MenuCard
+        name="Chuka Kurage"
+        description="Seasoned jellyfish salad. Crunchy, tangy, and refreshing."
+        price="RM 1.90"
+        image="/images/dishes/06.jpg"
+        tier="green"
+      />
+    </div>
+  </Container>
+</section>

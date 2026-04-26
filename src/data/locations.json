@@ -1,0 +1,58 @@
+[
+  {
+    "id": "setapak-central",
+    "name": "Setapak Central",
+    "tag": "Flagship",
+    "lot": "F12",
+    "floor": "1st Floor",
+    "address": "67 Jln Taman Ibu Kota, Taman Danau Kota, 53300 Kuala Lumpur",
+    "phone": "+60 14-372 2425",
+    "whatsapp": "+60 14-372 2425",
+    "hours": "10:00 AM – 10:00 PM daily",
+    "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.8!2d101.72!3d3.20!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37f0c3e9e1c5%3A0x3e5b5b5b5b5b5b5b!2sSetapak%20Central!5e0!3m2!1sen!2smy",
+    "foodpandaUrl": "https://foodpanda.my/sushi-monster-setapak",
+    "image": "/images/locations/setapak.jpg"
+  },
+  {
+    "id": "gardens-mall",
+    "name": "The Gardens Mall",
+    "tag": "Mid Valley",
+    "lot": "G247",
+    "floor": "Ground Floor",
+    "address": "Lingkaran Syed Putra, Mid Valley City, 59200 Kuala Lumpur",
+    "phone": "+60 14-372 2425",
+    "whatsapp": "+60 14-372 2425",
+    "hours": "10:00 AM – 10:00 PM daily",
+    "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.8!2d101.67!3d3.12!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37f0c3e9e1c5%3A0x3e5b5b5b5b5b5b5b!2sThe%20Gardens%20Mall!5e0!3m2!1sen!2smy",
+    "foodpandaUrl": "https://foodpanda.my/sushi-monster-gardens",
+    "image": "/images/locations/gardens.jpg"
+  },
+  {
+    "id": "bangsar-shopping",
+    "name": "Bangsar Shopping Centre",
+    "tag": "Bangsar",
+    "lot": "Lot G110",
+    "floor": "Ground Floor",
+    "address": "Jalan Maarof, Bangsar, 59000 Kuala Lumpur",
+    "phone": "+60 14-372 2425",
+    "whatsapp": "+60 14-372 2425",
+    "hours": "10:00 AM – 10:00 PM daily",
+    "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.8!2d101.67!3d3.13!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37f0c3e9e1c5%3A0x3e5b5b5b5b5b5b5b!2sBangsar%20Shopping%20Centre!5e0!3m2!1sen!2smy",
+    "foodpandaUrl": "https://foodpanda.my/sushi-monster-bangsar",
+    "image": "/images/locations/bangsar.jpg"
+  },
+  {
+    "id": "vipod-klcc",
+    "name": "Vipod Residences",
+    "tag": "KLCC Area",
+    "lot": "Ground Floor",
+    "floor": "Block C-1",
+    "address": "No 6 Jalan Kia Peng, 50450 Kuala Lumpur",
+    "phone": "+60 14-372 2425",
+    "whatsapp": "+60 14-372 2425",
+    "hours": "10:00 AM – 10:00 PM daily",
+    "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.8!2d101.71!3d3.15!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37f0c3e9e1c5%3A0x3e5b5b5b5b5b5b5b!2sVipod%20Residences!5e0!3m2!1sen!2smy",
+    "foodpandaUrl": "https://foodpanda.my/sushi-monster-vipod",
+    "image": "/images/locations/vipod.jpg"
+  }
+]

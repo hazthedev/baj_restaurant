@@ -11,6 +11,7 @@ interface MenuItem {
   signature?: boolean;
   featured?: boolean;
   featuredIn?: string;
+  tier?: 'green' | 'red' | 'gold' | 'special';
 }
 
 interface MenuGridProps {
@@ -18,11 +19,42 @@ interface MenuGridProps {
   activeCategory: string;
 }
 
+const tierConfig = {
+  green: {
+    dot: 'bg-wasabi-green',
+    bg: 'bg-wasabi-green/10',
+    text: 'text-wasabi-green',
+    label: 'RM 1.90',
+    name: 'Green'
+  },
+  red: {
+    dot: 'bg-salmon-red',
+    bg: 'bg-salmon-red/10',
+    text: 'text-salmon-red',
+    label: 'RM 3.90',
+    name: 'Red'
+  },
+  gold: {
+    dot: 'bg-gold',
+    bg: 'bg-gold/10',
+    text: 'text-gold',
+    label: 'RM 5.90+',
+    name: 'Gold'
+  },
+  special: {
+    dot: 'bg-monster-coral',
+    bg: 'bg-monster-coral/10',
+    text: 'text-monster-coral',
+    label: 'Set Menu',
+    name: 'Special'
+  }
+};
+
 const filterOptions = [
+  { key: 'halal', label: 'Halal ✓' },
   { key: 'signature', label: 'Signature' },
-  { key: 'spicy', label: 'Spicy 🌶️' },
   { key: 'vegetarian', label: 'Vegetarian' },
-  { key: 'cheap', label: 'Under RM10' },
+  { key: 'spicy', label: 'Spicy 🌶️' },
 ];
 
 export default function MenuGrid({ items, activeCategory }: MenuGridProps) {
@@ -43,6 +75,17 @@ export default function MenuGrid({ items, activeCategory }: MenuGridProps) {
     });
   }, [items, activeCategory, activeFilters]);
 
+  const getTierBadge = (tier?: string) => {
+    if (!tier || !tierConfig[tier as keyof typeof tierConfig]) return null;
+    const config = tierConfig[tier as keyof typeof tierConfig];
+    return (
+      <span className={`inline-flex items-center gap-1.5 ${config.bg} ${config.text} text-xs font-medium px-2 py-1 rounded-full`}>
+        <span className={`w-2 h-2 rounded-full ${config.dot}`}></span>
+        <span>{config.name}</span>
+      </span>
+    );
+  };
+
   return (
     <div>
       {/* Filter Chips */}
@@ -53,8 +96,8 @@ export default function MenuGrid({ items, activeCategory }: MenuGridProps) {
             onClick={() => toggleFilter(option.key)}
             className={`px-3 py-1.5 text-sm font-medium rounded-full transition-all duration-300 ease-out ${
               activeFilters.includes(option.key)
-                ? 'bg-cheese-yellow text-ink-black'
-                : 'bg-cream text-soy-brown hover:bg-cheese-yellow/30 hover:scale-[1.03]'
+                ? 'bg-monster-coral text-white'
+                : 'bg-soft-white text-slate hover:bg-monster-coral/20 hover:scale-[1.03]'
             }`}
           >
             {option.label}
@@ -63,7 +106,7 @@ export default function MenuGrid({ items, activeCategory }: MenuGridProps) {
         {activeFilters.length > 0 && (
           <button
             onClick={() => setActiveFilters([])}
-            className="px-3 py-1.5 text-sm text-soy-brown hover:text-chili-red transition-colors"
+            className="px-3 py-1.5 text-sm text-slate hover:text-monster-coral transition-colors"
           >
             Clear filters
           </button>
@@ -78,7 +121,7 @@ export default function MenuGrid({ items, activeCategory }: MenuGridProps) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: index * 0.05 }}
-            className={`bg-cream rounded-lg overflow-hidden transition-all duration-300 ease-out will-change-transform hover:-translate-y-1.5 hover:shadow-xl hover:shadow-cheese-yellow/15 ${
+            className={`bg-soft-white rounded-lg overflow-hidden transition-all duration-300 ease-out will-change-transform hover:-translate-y-1.5 hover:shadow-xl hover:shadow-monster-coral/10 ${
               item.featured ? 'sm:col-span-2' : ''
             }`}
           >
@@ -94,23 +137,24 @@ export default function MenuGrid({ items, activeCategory }: MenuGridProps) {
             )}
             <div className="p-4">
               <div className="flex items-start justify-between gap-2 mb-2">
-                <h3 className="font-display text-xl text-ink-black">{item.name}</h3>
-                <span className="font-semibold text-ink-black whitespace-nowrap">{item.price}</span>
+                <h3 className="font-display text-xl text-deep-navy">{item.name}</h3>
+                <span className="font-semibold text-deep-navy whitespace-nowrap">{item.price}</span>
               </div>
-              <p className="text-soy-brown text-sm">{item.description}</p>
+              <p className="text-slate text-sm">{item.description}</p>
               <div className="mt-3 flex flex-wrap gap-2">
+                {item.tier && getTierBadge(item.tier)}
                 {item.signature && (
-                  <span className="inline-flex items-center gap-1 bg-cheese-yellow/20 text-bkt-brown text-xs font-medium px-2 py-1 rounded">
-                    <span>🧀</span>
+                  <span className="inline-flex items-center gap-1 bg-monster-coral/20 text-monster-coral text-xs font-medium px-2 py-1 rounded-full">
+                    <span>🍣</span>
                     <span>Signature</span>
                   </span>
                 )}
-                {item.featuredIn && (
-                  <span className="inline-flex items-center gap-1 bg-bkt-brown/10 text-soy-brown text-xs font-medium px-2 py-1 rounded">
-                    Featured in {item.featuredIn}
-                  </span>
-                )}
               </div>
+              {item.featuredIn && (
+                <div className="mt-2 text-xs text-slate">
+                  Featured in <span className="font-semibold">{item.featuredIn}</span>
+                </div>
+              )}
             </div>
           </motion.div>
         ))}
@@ -118,10 +162,10 @@ export default function MenuGrid({ items, activeCategory }: MenuGridProps) {
 
       {filteredItems.length === 0 && (
         <div className="text-center py-16">
-          <p className="text-soy-brown text-lg">No items match your filters.</p>
+          <p className="text-slate text-lg">No items match your filters.</p>
           <button
             onClick={() => setActiveFilters([])}
-            className="mt-4 text-cheese-yellow hover:text-soft-mustard font-medium"
+            className="mt-4 text-monster-coral hover:text-salmon-red font-medium"
           >
             Clear filters
           </button>

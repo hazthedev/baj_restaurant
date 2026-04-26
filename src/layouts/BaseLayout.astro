@@ -13,7 +13,7 @@ interface Props {
   ogImage?: string;
 }
 
-const { title, description = 'The original Cheese Bak Kut Teh — featured by SETHLUI, Bangsar Babe, FoodAdvisor. Chinese-Malaysian café above the wet market in Setapak. Affordable, viral, worth the trip.', ogImage = '/og-image.jpg' } = Astro.props;
+const { title, description = 'Halal-certified Japanese sushi from RM1.90 per plate. 4 locations across Kuala Lumpur — Setapak, The Gardens, Bangsar, Vipod. 100% pork-free, family-friendly.', ogImage = '/og-image.jpg' } = Astro.props;
 ---
 
 <!doctype html>
@@ -32,30 +32,29 @@ const { title, description = 'The original Cheese Bak Kut Teh — featured by SE
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Restaurant",
-      name: "B.A.J Restaurant",
+      name: "Sushi Monster",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "1-18 Pasar Jalan Genting Kelang, Prima Setapak 2",
+        streetAddress: "67 Jln Taman Ibu Kota, Taman Danau Kota",
         addressLocality: "Kuala Lumpur",
-        postalCode: "53000",
+        postalCode: "53300",
         addressCountry: "MY"
       },
-      telephone: "+60-18-988-8766",
+      telephone: "+60-14-372-2425",
       priceRange: "$",
-      servesCuisine: ["Chinese", "Malaysian", "Fusion"],
+      servesCuisine: ["Japanese", "Sushi", "Halal"],
       aggregateRating: {
         "@type": "AggregateRating",
-        ratingValue: "4.5",
-        reviewCount: "1200"
+        ratingValue: "4.6",
+        reviewCount: "870"
       },
-      knownFor: "Cheese Bak Kut Teh",
+      knownFor: "Halal Japanese Sushi from RM1.90",
       openingHoursSpecification: [
-        { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], opens: "08:00", closes: "15:00" },
-        { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], opens: "17:30", closes: "22:00" }
+        { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], opens: "10:00", closes: "22:00" }
       ]
     })} />
   </head>
-  <body class="bg-bone-white text-ink-black font-body antialiased">
+  <body class="bg-soft-white text-deep-navy font-body antialiased">
     <slot />
   </body>
 </html>

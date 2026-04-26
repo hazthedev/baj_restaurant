@@ -1,32 +1,52 @@
 ---
 import Container from '../components/Container.astro';
-import reviewsData from '../data/reviews.json';
+
+const reviews = [
+  {
+    name: "Aisyah M.",
+    rating: 5,
+    date: "2024-03-15",
+    quote: "Finally, halal sushi that tastes authentic! My family comes here every weekend. The salmon nigiri is always fresh and the RM1.90 plates mean we can eat like monsters without breaking the bank."
+  },
+  {
+    name: "Firdaus K.",
+    rating: 5,
+    date: "2024-02-28",
+    quote: "Been to all 4 locations and the quality is consistent. Love that I can bring my Muslim friends here without worrying about halal status. The tier system makes ordering so easy!"
+  },
+  {
+    name: "Sarah L.",
+    rating: 4,
+    date: "2024-01-20",
+    quote: "The tempura soba is my comfort food. At RM5.90, it's such great value. Setapak Central location is always busy but worth the wait."
+  }
+];
 
 function getStars(rating: number) {
   return '⭐'.repeat(rating);
 }
 ---
 
-<section class="py-20 md:py-28 bg-cream">
+<section class="py-20 md:py-28 bg-pure-white">
   <Container>
     <div class="text-center max-w-3xl mx-auto mb-12">
-      <h2 class="font-display text-4xl md:text-5xl text-ink-black">
-        4.5 / 5 from 1,200+ Google reviewers
+      <h2 class="font-display text-4xl md:text-5xl text-deep-navy">
+        4.6 / 5 from 870+ diners on Google
       </h2>
-      <p class="text-soy-brown text-lg mt-4">
-        Most of them came for the cheese bak kut teh. Most of them came back for something else.
+      <p class="text-slate text-lg mt-4">
+        See why monsters keep coming back for more.
       </p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-      {reviewsData.map((review) => (
-        <div class="bg-bone-white p-6 rounded-xl">
+      {reviews.map((review) => (
+        <div class="bg-soft-white p-6 rounded-xl">
           <div class="text-xl mb-2">{getStars(review.rating)}</div>
-          <p class="text-ink-black text-base leading-relaxed mb-4">
+          <p class="text-deep-navy text-base leading-relaxed mb-4">
             "{review.quote}"
           </p>
-          <div class="text-soy-brown text-sm">
-            <span class="font-semibold text-ink-black">{review.name}</span>
+          <div class="text-slate text-sm">
+            <span class="font-semibold text-deep-navy">{review.name}</span>
             <span class="mx-2">·</span>
             <span>{review.date}</span>
           </div>

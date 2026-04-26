@@ -1,0 +1,43 @@
+---
+import Container from '../components/Container.astro';
+import Button from '../components/Button.astro';
+import locationsData from '../data/locations.json';
+---
+
+<section class="py-16 md:py-20 bg-soft-white">
+  <Container>
+    <div class="text-center mb-10">
+      <h2 class="font-display text-3xl md:text-4xl text-deep-navy mb-4">4 monsters. 4 malls.</h2>
+      <p class="text-slate max-w-2xl mx-auto">
+        Wherever you are in KL, there's a Sushi Monster within reach. One brand, four kitchens, same plates.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {locationsData.map((location) => (
+        <a
+          href={`/locations#${location.id}`}
+          class="group bg-pure-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+        >
+          <div class="aspect-[4/3] bg-slate/10">
+            <img
+              src={location.image}
+              alt={location.name}
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <div class="p-4">
+            <h3 class="font-display text-xl text-deep-navy group-hover:text-monster-coral transition-colors">
+              {location.name}
+            </h3>
+            <p class="text-slate text-sm mt-1">{location.floor}, {location.lot}</p>
+            <span class="text-monster-coral text-sm font-medium mt-2 inline-block">View Details →</span>
+          </div>
+        </a>
+      ))}
+    </div>
+    <div class="text-center mt-10">
+      <Button href="/locations">View All Locations</Button>
+    </div>
+  </Container>
+</section>

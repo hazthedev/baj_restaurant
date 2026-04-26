@@ -10,30 +10,50 @@ import MenuGrid from '../components/MenuGrid';
 import menuData from '../data/menu.json';
 import siteData from '../data/site.json';
 
-const { categories, items } = menuData;
+const { categories, items, tiers } = menuData;
 const whatsappNumber = siteData.whatsapp;
 ---
 
 <BaseLayout
-  title="The Menu | B.A.J Restaurant Setapak | Cheese Bak Kut Teh & More"
-  description="Cheese bak kut teh, plus 80 other reasons to stay. Full menu with prices — Bak Kut Teh, Spaghetti & Western, Rice Sets, Snacks, Drinks, and Set Meals."
+  title="The Menu | Sushi Monster | Halal Sushi from RM1.90"
+  description="Halal-certified Japanese sushi menu. Green tier RM1.90, Red tier RM3.90, Gold tier RM5.90+. Sushi, sashimi, maki rolls, tempura, and set meals."
 >
   <Navbar currentPage="menu" />
   
   <!-- Menu Hero -->
-  <section class="py-16 md:py-20 bg-cream">
+  <section class="py-16 md:py-20 bg-pure-white">
     <Container>
       <div class="text-center max-w-3xl mx-auto">
-        <h1 class="font-display text-4xl md:text-5xl lg:text-6xl text-ink-black">The Menu</h1>
-        <p class="text-soy-brown text-lg md:text-xl mt-4">
-          Cheese bak kut teh, plus 80 other reasons to stay.
+        <h1 class="font-display text-4xl md:text-5xl lg:text-6xl text-deep-navy">The Menu</h1>
+        <p class="text-slate text-lg md:text-xl mt-4">
+          Color-coded. Simple. Cheap. Pick your plates and stack them high.
         </p>
       </div>
     </Container>
   </section>
 
+  <!-- Tier Legend (Sticky) -->
+  <div class="sticky top-16 md:top-20 z-40 bg-soft-white/95 backdrop-blur-md border-b border-slate/10 py-3">
+    <Container>
+      <div class="flex flex-wrap items-center justify-center gap-4 md:gap-8">
+        <div class="flex items-center gap-2">
+          <span class="w-3 h-3 rounded-full bg-wasabi-green"></span>
+          <span class="text-sm font-medium text-deep-navy">Green <span class="text-slate">· RM 1.90</span></span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="w-3 h-3 rounded-full bg-salmon-red"></span>
+          <span class="text-sm font-medium text-deep-navy">Red <span class="text-slate">· RM 3.90</span></span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="w-3 h-3 rounded-full bg-gold"></span>
+          <span class="text-sm font-medium text-deep-navy">Gold <span class="text-slate">· RM 5.90+</span></span>
+        </div>
+      </div>
+    </Container>
+  </div>
+
   <!-- Interactive Menu -->
-  <div class="min-h-[60vh]">
+  <div class="min-h-[60vh] bg-pure-white">
     <MenuTabs categories={categories} activeCategory="All" client:load />
     <Container className="py-8">
       <MenuGrid items={items} activeCategory="All" client:load />
@@ -41,19 +61,19 @@ const whatsappNumber = siteData.whatsapp;
   </div>
 
   <!-- Order CTA -->
-  <section class="py-16 md:py-20 bg-cream">
+  <section class="py-16 md:py-20 bg-soft-white">
     <Container>
       <div class="text-center max-w-2xl mx-auto">
-        <h2 class="font-display text-3xl md:text-4xl text-ink-black mb-4">Hungry?</h2>
-        <p class="text-soy-brown text-lg mb-8">
-          WhatsApp us for pre-orders, large groups, or to ask if the BKT is on tonight.
+        <h2 class="font-display text-3xl md:text-4xl text-deep-navy mb-4">Hungry?</h2>
+        <p class="text-slate text-lg mb-8">
+          WhatsApp us for reservations, large groups, or catering. Or order delivery on FoodPanda.
         </p>
         <div class="flex flex-wrap justify-center gap-4">
-          <Button href={`https://wa.me/${whatsappNumber}`}>
-            WhatsApp Order
+          <Button href={`https://wa.me/${whatsappNumber.replace(/\s/g, '')}`}>
+            WhatsApp Us
           </Button>
-          <Button href={siteData.alacarteUrl} variant="outline">
-            Order on alacarte.my
+          <Button href={siteData.foodpandaUrl} variant="outline">
+            Order on FoodPanda
           </Button>
         </div>
       </div>
